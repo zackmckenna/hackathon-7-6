@@ -15,9 +15,10 @@ export const getAnalysis = async ({ photoUrl }) => {
   )
 
   const json = response.json()
+  console.log(json)
 
   return {
     photoUrl,
-    tags: json.results,
+    tags: json.result,
   }
 }

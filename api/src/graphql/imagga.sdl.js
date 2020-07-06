@@ -7,7 +7,7 @@ export const schema = gql`
   }
 
   type Tag {
-    confidence: Float!
+    confidence: String!
   }
 
   type Query {
