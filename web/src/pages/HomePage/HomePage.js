@@ -1,11 +1,16 @@
+import { useState } from 'react'
 import NavLayout from 'src/layouts/NavLayout'
+import PhotoCell from 'src/components/PhotoCell'
 
 const HomePage = () => {
+  const [query, setQuery] = useState('')
+
   return (
     <NavLayout>
       <div className="text-center">
-        <h1>HomePage</h1>
-        <p>Find me in ./web/src/pages/HomePage/HomePage.js</p>
+        <h1>PHOTO ANALYSIS</h1>
+
+        <PhotoCell keyword={'mountain'} />
       </div>
     </NavLayout>
   )
