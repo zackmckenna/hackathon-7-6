@@ -64,7 +64,7 @@ const NavLayout = ({ children }) => {
                 className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-4"
                 rel="noreferrer"
                 target="_blank"
-                href="https://www.mintbean.io/mb-event/f45c4fe2-fac3-4fec-9159-a7ec2f2cedf7"
+                href="https://www.mintbean.io/mb-event/db790794-7bc6-4e58-b3f3-8fa689220079"
               >
                 Mintbean Hackathon 7-6
               </a>
