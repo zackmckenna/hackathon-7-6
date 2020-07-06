@@ -5,7 +5,7 @@ import fetch from 'node-fetch'
 
 export const getAnalysis = async ({ photoUrl }) => {
   const response = await fetch(
-    'https://api.imagga.com/v2/tags?image_url=https://docs.imagga.com/static/images/docs/sample/japan-605234_1280.jpg',
+    `https://api.imagga.com/v2/tags?image_url=${photoUrl}`,
     {
       headers: {
         Authorization:
@@ -19,6 +19,6 @@ export const getAnalysis = async ({ photoUrl }) => {
 
   return {
     photoUrl,
-    tags: json.result,
+    results: json.result,
   }
 }

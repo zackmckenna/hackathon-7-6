@@ -3,7 +3,7 @@
 export const schema = gql`
   type Analysis {
     photoUrl: String!
-    tags: [Tag!]
+    results: [Tag]
   }
 
   type Tag {
