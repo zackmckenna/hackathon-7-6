@@ -18,6 +18,6 @@ export const getAnalysis = async ({ photoUrl }) => {
 
   return {
     photoUrl,
-    results: json.results,
+    tags: json.results,
   }
 }

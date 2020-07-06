@@ -3,14 +3,11 @@
 export const schema = gql`
   type Analysis {
     photoUrl: String!
-    results : [Result!]
+    tags: [Tag!]
   }
 
-  type Result {
-    confidence: Int!
-    tag: {
-      en: String!
-    }
+  type Tag {
+    confidence: Float!
   }
 
   type Query {
