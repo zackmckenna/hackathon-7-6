@@ -12,7 +12,7 @@ import {
 
 const HomePage = () => {
   const [query, setQuery] = useState('')
-  const [keyword, setKeyword] = useState(null)
+  const [keyword, setKeyword] = useState('')
 
   const onSubmit = () => {
     setKeyword(query)
@@ -28,10 +28,8 @@ const HomePage = () => {
       <div className="text-center">
         <h1>PHOTO ANALYSIS</h1>
         <p>
-          Currently the application allows you to search for images by keyword.
-          The goal was to integrate it with imagga.com so you could use machine
-          learning to analyze the photos, but getting the correct api
-          authorization did not prove easy
+          unfortunately, there is an issue with the analysis api authorization
+          so the analyze functionality does not work =[
         </p>
         <div className="w-full max-w-xs text-center">
           <Form className="text-center" onSubmit={onSubmit}>
